@@ -1,0 +1,99 @@
+Information: Updating graph... (UID-83)
+
+************************************************************
+SI options:
+Delta Delay Computation:           true
+Static Noise Computation:          true
+Timing window analysis for SI:     true
+Reselection in timing window:      false
+Min Delta Delay for SI:            true
+Analysis Effort:                   medium
+Max Transition Mode:               normal_slew
+Static Noise Thresholds:           0.35 (0.33V) above low
+                                   0.35 (0.33V) below high
+Route xtalk prevention:            true
+Route xtalk prevention threshold:  0.35
+************************************************************
+
+ 
+****************************************
+Report : area
+Design : FPAdder
+Version: G-2012.06-ICC-SP2
+Date   : Tue Dec 29 01:24:24 2015
+****************************************
+
+Information: Updating design information... (UID-85)
+
+************************************************************
+SI options:
+Delta Delay Computation:           true
+Static Noise Computation:          true
+Timing window analysis for SI:     true
+Reselection in timing window:      false
+Min Delta Delay for SI:            true
+Analysis Effort:                   medium
+Max Transition Mode:               normal_slew
+Static Noise Thresholds:           0.35 (0.33V) above low
+                                   0.35 (0.33V) below high
+Route xtalk prevention:            true
+Route xtalk prevention threshold:  0.35
+************************************************************
+
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Total 2983 nets in the design, 2944 nets have timing window. (TIM-180)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                          101
+Number of nets:                           298
+Number of cells:                          147
+Number of combinational cells:             45
+Number of sequential cells:                98
+Number of macros:                           0
+Number of buf/inv:                          4
+Number of references:                      13
+
+Combinational area:       2957.654000
+Buf/Inv area:              342.342003
+Noncombinational area:     443.155984
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          3400.809984
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------------
+FPAdder                           3400.8100    100.0    89.9080   443.1560  0.0000  FPAdder
+Adder                              715.2740     21.0   167.3140     0.0000  0.0000  Adder24Bit
+Adder/CL                           179.8160      5.3   179.8160     0.0000  0.0000  carryLookAheadAdder
+Adder/Comp                         166.5160      4.9     0.0000     0.0000  0.0000  comparator24bit
+Adder/Comp/add_13                   77.6720      2.3    77.6720     0.0000  0.0000  comparator24bit_DW01_add_1
+Adder/Comp/sub_add_11_b0            88.8440      2.6    88.8440     0.0000  0.0000  comparator24bit_DW01_sub_1
+Adder/add_23                        63.5740      1.9    63.5740     0.0000  0.0000  Adder24Bit_DW01_add_6
+Adder/add_24                        64.1060      1.9    64.1060     0.0000  0.0000  Adder24Bit_DW01_add_5
+Adder/add_33                        73.9480      2.2    73.9480     0.0000  0.0000  Adder24Bit_DW01_add_4
+Norm                              1790.9780     52.7  1790.9780     0.0000  0.0000  Normalize
+comparator                         104.2720      3.1    36.1760     0.0000  0.0000  comparator8bit
+comparator/add_14                   49.4760      1.5    49.4760     0.0000  0.0000  comparator8bit_DW01_add_2
+comparator/add_18                   18.6200      0.5    18.6200     0.0000  0.0000  comparator8bit_DW01_inc_0
+shift                              257.2220      7.6    44.6880     0.0000  0.0000  shiftRegister
+shift/srl_15                       212.5340      6.2   212.5340     0.0000  0.0000  shiftRegister_DW_rightsh_2
+--------------------------------  ---------  -------  ---------  ---------  ------  --------------------------
+Total                                                 2957.6540   443.1560  0.0000
+
+1

@@ -1,0 +1,57 @@
+module boothMultiplierV4(
+  input clk,
+  input reset,
+  input [31:0] b,
+  input [31:0] a,
+  output [63:0] result
+);
+
+  reg [31:0] Q;
+  reg [31:0] Acc;
+  reg Q_1;
+  reg [5:0] count;
+  wire [64:0] add_res;
+  wire [64:0] add_res_sh;
+  wire [64:0] sub_res;
+  wire [64:0] sub_res_sh;
+  wire [31:0] acc_Sum;
+  wire [31:0] acc_Diff;
+  wire tempC1,tempC2;
+
+ carrySelectAdder A0 (.a(Acc),.b(b),.cin(1'b0),.result(acc_Sum),.cout(tempC1));
+  assign add_res = {acc_Sum, Q, Q_1};
+  assign add_res_sh = {add_res[64], add_res[64:1]};
+
+
+  carrySelectAdder A1 (.a(Acc),.b(~b),.cin(1'b1),.result(acc_Diff),.cout(tempC2));
+  assign sub_res = {acc_Diff, Q, Q_1}; 
+  assign sub_res_sh = {sub_res[64], sub_res[64:1]};
+
+
+  always @(posedge clk) begin
+    if (reset) begin
+      Q <= a;
+      Acc <= 0;
+      Q_1 <= 0;
+      count <= 31; 
+    end else begin
+      if (count > 0) begin
+        if (Q[0] == 1'b1 && Q_1 == 1'b0)
+        begin
+          {Acc,Q,Q_1} <= sub_res_sh;
+        end 
+        else if (Q[0] == 1'b0 && Q_1 == 1'b1) 
+        begin
+          {Acc,Q,Q_1} <= add_res_sh;
+        end else 
+        begin
+          {Acc,Q,Q_1} <= {Acc[31], Acc, Q};
+        end
+        count <= count - 1;
+      end
+    end
+  end
+
+  assign result={ Acc, Q};
+
+endmodule

@@ -1,0 +1,14 @@
+vsim -gui work.FPAdderTB
+add wave -position insertpoint  \
+sim:/FPAdderTB/a \
+sim:/FPAdderTB/b \
+sim:/FPAdderTB/result \
+sim:/FPAdderTB/clk \
+sim:/FPAdderTB/overflow \
+sim:/FPAdderTB/underflow \
+sim:/FPAdderTB/successCount
+run
+run
+run
+run
+run

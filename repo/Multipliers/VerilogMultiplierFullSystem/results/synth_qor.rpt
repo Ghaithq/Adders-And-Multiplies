@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:21:20 2016
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              60.00
+  Critical Path Length:          4.87
+  Critical Path Slack:           0.07
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          6
+  Hierarchical Port Count:        707
+  Leaf Cell Count:               2691
+  Buf/Inv Cell Count:             311
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2563
+  Sequential Cell Count:          128
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     5347.664008
+  Noncombinational Area:   783.104004
+  Buf/Inv Area:            219.715996
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              6130.768012
+  Design Area:            6130.768012
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          3820
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: localhost.localdomain
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    1.52
+  Logic Optimization:                  0.54
+  Mapping Optimization:                0.90
+  -----------------------------------------
+  Overall Compile Time:                3.86
+  Overall Compile Wall Clock Time:     3.81
+
+1

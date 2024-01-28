@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : cell
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:24:09 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+M0                        FPMultiplier                    3024.154008
+                                                                    h
+R0                        register_0                      198.702001
+                                                                    h, n, p
+R1                        register_2                      198.702001
+                                                                    h, n, p
+R2                        register_1                      198.702001
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 4 cells                                             3620.260011
+1

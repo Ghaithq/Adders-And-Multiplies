@@ -1,0 +1,37 @@
+module multiplierTreeV3 (
+  input signed [31:0] a,
+  input signed [31:0] b,
+  output signed [63:0] result
+);
+
+wire [31:0] tempResultA [30:0];
+wire [31:0] tempResultB [30:0];
+wire [63:0] tempResult;
+wire finalSign;
+// 
+wire [31:0] a_abs;
+wire [31:0] b_abs;
+assign a_abs=(a^{32{a[31]}}) + a[31];
+assign b_abs=(b^{32{b[31]}}) + b[31];
+assign finalSign=a[31]^b[31];
+// 
+
+assign tempResultA[0]={1'b0,a_abs[31:1]}&{32{b_abs[0]}};
+assign tempResultB[0]=a_abs[31:0]&{32{b_abs[1]}};
+// carryLookAheadAdder A0(.a(tempResultA[0]),.b(tempResultB[0]),.cin(1'b0),.result({tempResultA[1][30:0],tempResult[1]}),.cout(tempResultA[1][31]));
+assign {tempResultA[1],tempResult[1]}=tempResultA[0]+tempResultB[0];
+assign tempResult[0]=a_abs[0]&b_abs[0];
+generate
+    genvar i;
+    for (i = 1; i < 30; i = i + 1) begin : generating_partialProducts
+      assign tempResultB[i]=a_abs[31:0]&{32{b_abs[i+1]}};
+      carryLookAheadAdder A1(.a(tempResultA[i]),.b(tempResultB[i]),.cin(1'b0),.result({tempResultA[i+1][30:0],tempResult[i+1]}),.cout(tempResultA[i+1][31]));
+    end
+endgenerate
+assign tempResultB[30]=a_abs[31:0]&{32{b_abs[31]}};
+// carryLookAheadAdder A2(.a(tempResultA[30]),.b(tempResultB[30]),.cin(1'b0),.result(tempResult[62:31]),.cout(tempResult[63]));
+assign {tempResult[63:31]}=tempResultA[30]+tempResultB[30];
+assign result=(tempResult^{64{finalSign}})+finalSign;
+
+
+endmodule

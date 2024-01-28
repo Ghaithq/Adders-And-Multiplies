@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:24:08 2016
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                           98
+Number of nets:                           194
+Number of cells:                            4
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       4
+
+Combinational area:       3032.932008
+Buf/Inv area:               85.386000
+Noncombinational area:     587.328003
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          3620.260011
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ------------------------
+TopModule                         3620.2600    100.0     0.0000     0.0000  0.0000  TopModule
+M0                                3024.1540     83.5   116.5080     0.0000  0.0000  FPMultiplier
+M0/add_2_root_sub_1_root_sub_16     32.4520      0.9    32.4520     0.0000  0.0000  FPMultiplier_DW01_add_2
+M0/mult_13                        2875.1940     79.4  2737.4060     0.0000  0.0000  FPMultiplier_DW02_mult_0
+M0/mult_13/FS_1                    137.7880      3.8   137.7880     0.0000  0.0000  FPMultiplier_DW01_add_1
+R0                                 198.7020      5.5     2.9260   195.7760  0.0000  register_0
+R1                                 198.7020      5.5     2.9260   195.7760  0.0000  register_2
+R2                                 198.7020      5.5     2.9260   195.7760  0.0000  register_1
+--------------------------------  ---------  -------  ---------  ---------  ------  ------------------------
+Total                                                 3032.9320   587.3280  0.0000
+
+1

@@ -1,0 +1,85 @@
+Loading db file '/home/user57/Desktop/CSA(ripple)/ref/models/saed90nm_typ_ht.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : FPAdder
+Version: U-2022.12-SP7
+Date   : Wed Dec 13 18:39:39 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user57/Desktop/CSA(ripple)/ref/models/saed90nm_typ_ht.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+FPAdder                16000             saed90nm_typ_ht
+comparator8bit         8000              saed90nm_typ_ht
+shiftRegister          8000              saed90nm_typ_ht
+Adder24Bit             8000              saed90nm_typ_ht
+Normalize              8000              saed90nm_typ_ht
+carryLookAheadAdder    8000              saed90nm_typ_ht
+comparator24bit        8000              saed90nm_typ_ht
+Adder24Bit_DW01_add_0_DW01_add_13
+                       8000              saed90nm_typ_ht
+Adder24Bit_DW01_add_1_DW01_add_14
+                       8000              saed90nm_typ_ht
+Adder24Bit_DW01_add_2_DW01_add_15
+                       8000              saed90nm_typ_ht
+comparator24bit_DW01_add_0_DW01_add_16
+                       8000              saed90nm_typ_ht
+comparator24bit_DW01_inc_0
+                       8000              saed90nm_typ_ht
+comparator8bit_DW01_inc_0_DW01_inc_1
+                       ForQA             saed90nm_typ_ht
+comparator8bit_DW01_add_0_DW01_add_17
+                       8000              saed90nm_typ_ht
+comparator8bit_DW01_inc_1_DW01_inc_2
+                       ForQA             saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   3.7285 mW   (80%)
+  Net Switching Power  =   1.2165 mW   (20%)
+                         ---------
+Total Dynamic Power    =   4.9450 mW  (100%)
+
+Cell Leakage Power     = 171.1701 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  3.7285e+03        1.2165e+03        1.7117e+08        5.1162e+03  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          3.7285e+03 uW     1.2165e+03 uW     1.7117e+08 pW     5.1162e+03 uW
+1
