@@ -1,0 +1,46 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:30:41 2016
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+TopModule              5K_hvratio_1_1    NangateOpenCellLibrary_ss0p95vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+TopModule                                47.226  126.899 8.92e+03  183.050 100.0
+  R2 (register_N64_1)                     1.323    4.508 1.25e+03    7.080   3.9
+  M0 (sequentialMultiplier)              44.679  116.044 6.34e+03  167.065  91.3
+    A0 (carryLookAheadAdder64bit)         7.686   11.183 1.75e+03   20.619  11.3
+  R0 (register_N64_0)                     1.225    6.347 1.33e+03    8.905   4.9
+1

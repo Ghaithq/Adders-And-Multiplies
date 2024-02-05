@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : cell
+Design : simpleAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 16:03:08 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U57                       NOR2X0          saed90nm_typ_ht 5.529600  
+U58                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U59                       MUX21X1         saed90nm_typ_ht 11.059200 
+U60                       NOR4X0          saed90nm_typ_ht 9.216000  
+U61                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U62                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U63                       NAND3X0         saed90nm_typ_ht 7.372800  
+U64                       XOR2X1          saed90nm_typ_ht 13.824000 
+U65                       XOR2X1          saed90nm_typ_ht 13.824000 
+U66                       XOR2X1          saed90nm_typ_ht 13.824000 
+U67                       NAND4X0         saed90nm_typ_ht 8.294400  
+U68                       XOR2X1          saed90nm_typ_ht 13.824000 
+U69                       NOR2X0          saed90nm_typ_ht 5.529600  
+U70                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U71                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U72                       INVX0           saed90nm_typ_ht 5.529600  
+U73                       MUX21X1         saed90nm_typ_ht 11.059200 
+U74                       AND4X1          saed90nm_typ_ht 10.137600 
+U75                       NOR4X0          saed90nm_typ_ht 9.216000  
+U76                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U77                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U78                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U79                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U80                       NOR2X0          saed90nm_typ_ht 5.529600  
+U81                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U82                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U83                       XOR2X1          saed90nm_typ_ht 13.824000 
+U84                       XOR2X1          saed90nm_typ_ht 13.824000 
+U85                       MUX21X1         saed90nm_typ_ht 11.059200 
+U86                       NOR4X0          saed90nm_typ_ht 9.216000  
+U87                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U88                       XNOR2X1         saed90nm_typ_ht 13.824000 
+U89                       NAND2X0         saed90nm_typ_ht 5.529600  
+U90                       XOR2X1          saed90nm_typ_ht 13.824000 
+U91                       XOR2X1          saed90nm_typ_ht 13.824000 
+U92                       NAND4X0         saed90nm_typ_ht 8.294400  
+U93                       XOR2X1          saed90nm_typ_ht 13.824000 
+U94                       XOR2X1          saed90nm_typ_ht 13.824000 
+U95                       XOR2X1          saed90nm_typ_ht 13.824000 
+U96                       XOR2X1          saed90nm_typ_ht 13.824000 
+U97                       MUX21X1         saed90nm_typ_ht 11.059200 
+U98                       NOR2X0          saed90nm_typ_ht 5.529600  
+U99                       NAND4X0         saed90nm_typ_ht 8.294400  
+U100                      XOR2X1          saed90nm_typ_ht 13.824000 
+U101                      XOR2X1          saed90nm_typ_ht 13.824000 
+U102                      XOR2X1          saed90nm_typ_ht 13.824000 
+U103                      XOR2X1          saed90nm_typ_ht 13.824000 
+U104                      NAND4X0         saed90nm_typ_ht 8.294400  
+U105                      XOR2X1          saed90nm_typ_ht 13.824000 
+U106                      XOR2X1          saed90nm_typ_ht 13.824000 
+U107                      XOR2X1          saed90nm_typ_ht 13.824000 
+U108                      XOR2X1          saed90nm_typ_ht 13.824000 
+f1                        adder8bit_0                     317.030403
+                                                                    h
+f2                        adder8bit_3                     317.030403
+                                                                    h
+f3                        adder8bit_2                     317.030403
+                                                                    h
+f4                        adder8bit_1                     317.030403
+                                                                    h
+--------------------------------------------------------------------------------
+Total 56 cells                                            1880.064026
+1

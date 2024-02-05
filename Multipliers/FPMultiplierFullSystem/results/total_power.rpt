@@ -1,0 +1,50 @@
+Loading db file '/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:24:09 2016
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+TopModule              5K_hvratio_1_1    NangateOpenCellLibrary_ss0p95vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+TopModule                               114.478  201.886 1.42e+04  330.546 100.0
+  R2 (register_1)                         6.963   34.671  650.567   42.284  12.8
+  M0 (FPMultiplier)                     102.332  110.923 1.22e+04  225.460  68.2
+    mult_13 (FPMultiplier_DW02_mult_0)   95.885  104.505 1.14e+04  211.780  64.1
+    add_2_root_sub_1_root_sub_16 (FPMultiplier_DW01_add_2)
+                                          0.769    1.115  108.126    1.992   0.6
+  R1 (register_2)                         2.792   28.186  663.214   31.641   9.6
+  R0 (register_0)                         2.392   28.106  663.409   31.161   9.4
+1

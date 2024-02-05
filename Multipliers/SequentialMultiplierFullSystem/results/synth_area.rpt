@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:30:41 2016
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                          132
+Number of nets:                           260
+Number of cells:                            3
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       3
+
+Combinational area:       1250.199996
+Buf/Inv area:              192.052000
+Noncombinational area:    1099.643992
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          2349.843989
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ------------------------
+TopModule                         2349.8440    100.0     0.0000     0.0000  0.0000  TopModule
+M0                                1552.9080     66.1   837.1020   316.5400  0.0000  sequentialMultiplier
+M0/A0                              399.2660     17.0   399.2660     0.0000  0.0000  carryLookAheadAdder64bit
+R0                                 398.4680     17.0     6.9160   391.5520  0.0000  register_N64_0
+R2                                 398.4680     17.0     6.9160   391.5520  0.0000  register_N64_1
+--------------------------------  ---------  -------  ---------  ---------  ------  ------------------------
+Total                                                 1250.2000  1099.6440  0.0000
+
+1

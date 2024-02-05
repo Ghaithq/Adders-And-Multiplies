@@ -1,0 +1,48 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:21:20 2016
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+TopModule              5K_hvratio_1_1    NangateOpenCellLibrary_ss0p95vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+TopModule                               176.510  291.756 2.39e+04  492.148 100.0
+  R2 (register_N64)                      13.468   64.165 1.31e+03   78.939  16.0
+  M0 (simpleMultiplier)                 160.195  176.978 2.12e+04  358.423  72.8
+    mult_8 (simpleMultiplier_DW02_mult_0)
+                                        160.195  176.978 2.12e+04  358.423  72.8
+  R1 (register_N32_3)                     1.423   25.340  663.214   27.425   5.6
+  R0 (register_N32_2)                     1.424   25.273  663.409   27.361   5.6
+1

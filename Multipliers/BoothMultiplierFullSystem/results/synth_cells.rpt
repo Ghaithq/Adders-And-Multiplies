@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : cell
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:32:45 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+M0                        boothMultiplier                 1316.699994
+                                                                    h, n
+R0                        register_N64_2                  398.468002
+                                                                    h, n, p
+R2                        register_N64_3                  398.468002
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 3 cells                                             2113.635998
+1

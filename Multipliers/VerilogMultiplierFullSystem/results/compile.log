@@ -1,0 +1,85 @@
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'register_N64'
+  Processing 'simpleMultiplier'
+  Processing 'register_N32_2'
+  Processing 'TopModule'
+Warning: Design 'register_N64.db:register_N64' comes before design 'register_N64.db:register_N64' in the link_library; 'register_N64.db:register_N64' will be ignored. (UIO-92)
+Information: Design 'register_N64' is referenced in design 'TopModule.db:TopModule'. (UIO-93)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'simpleMultiplier_DW02_mult_0'
+  Processing 'simpleMultiplier_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    6413.3      0.00       0.0       0.0                          
+    0:00:02    6413.3      0.00       0.0       0.0                          
+    0:00:02    6413.3      0.00       0.0       0.0                          
+    0:00:02    6413.3      0.00       0.0       0.0                          
+    0:00:02    6413.3      0.00       0.0       0.0                          
+    0:00:02    6413.3      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6155.0      0.00       0.0       0.0                          
+    0:00:03    6138.7      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+    0:00:03    6130.8      0.00       0.0       0.0                          
+Loading db file '/home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db'
+
+  Optimization Complete
+  ---------------------
+1

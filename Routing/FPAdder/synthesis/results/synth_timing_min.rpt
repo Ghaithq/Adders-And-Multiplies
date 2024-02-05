@@ -1,0 +1,334 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : FPAdder
+Version: G-2012.06-SP2
+Date   : Mon Dec 28 22:39:07 2015
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: a_reg_reg[31]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  a_reg_reg[31]/CK (DFF_X1)                0.00       0.00 r
+  a_reg_reg[31]/Q (DFF_X1)                 0.08       0.08 r
+  U94/Z (MUX2_X1)                          0.09       0.17 r
+  Adder/signFO (Adder24Bit)                0.00       0.17 r
+  Adder/U15/Z (MUX2_X1)                    0.07       0.24 r
+  Adder/U5/Z (BUF_X2)                      0.04       0.28 r
+  Adder/U27/Z (BUF_X4)                     0.08       0.36 r
+  Adder/finalSign (Adder24Bit)             0.00       0.36 r
+  result_reg[31]/D (DFF_X1)                0.02       0.38 r
+  data arrival time                                   0.38
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[31]/CK (DFF_X1)               0.00       0.00 r
+  library hold time                        0.02       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.36
+
+
+  Startpoint: b_reg_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  b_reg_reg[30]/CK (DFF_X1)                0.00       0.00 r
+  b_reg_reg[30]/Q (DFF_X1)                 0.08       0.08 r
+  U92/Z (MUX2_X1)                          0.05       0.13 r
+  Norm/e[7] (Normalize)                    0.00       0.13 r
+  Norm/U1018/ZN (XNOR2_X1)                 0.04       0.17 f
+  Norm/U1082/ZN (NAND4_X1)                 0.03       0.20 r
+  Norm/U570/ZN (OAI21_X1)                  0.03       0.23 f
+  Norm/U1085/ZN (INV_X1)                   0.04       0.27 r
+  Norm/U1020/Z (BUF_X4)                    0.08       0.35 r
+  Norm/U1086/ZN (NOR2_X1)                  0.05       0.40 f
+  Norm/normResult[0] (Normalize)           0.00       0.40 f
+  result_reg[0]/D (DFF_X1)                 0.01       0.40 f
+  data arrival time                                   0.40
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[0]/CK (DFF_X1)                0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.40
+  -----------------------------------------------------------
+  slack (MET)                                         0.40
+
+
+  Startpoint: overflow_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: overflow (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  overflow_reg/CK (DFF_X1)                 0.00       0.00 r
+  overflow_reg/Q (DFF_X1)                  0.09       0.09 f
+  overflow (out)                           0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: result_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[0]/CK (DFF_X1)                0.00       0.00 r
+  result_reg[0]/Q (DFF_X1)                 0.09       0.09 f
+  result[0] (out)                          0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: result_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[1]/CK (DFF_X1)                0.00       0.00 r
+  result_reg[1]/Q (DFF_X1)                 0.09       0.09 f
+  result[1] (out)                          0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: result_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[2]/CK (DFF_X1)                0.00       0.00 r
+  result_reg[2]/Q (DFF_X1)                 0.09       0.09 f
+  result[2] (out)                          0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: result_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[3]/CK (DFF_X1)                0.00       0.00 r
+  result_reg[3]/Q (DFF_X1)                 0.09       0.09 f
+  result[3] (out)                          0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: result_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[4]/CK (DFF_X1)                0.00       0.00 r
+  result_reg[4]/Q (DFF_X1)                 0.09       0.09 f
+  result[4] (out)                          0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: result_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[5]/CK (DFF_X1)                0.00       0.00 r
+  result_reg[5]/Q (DFF_X1)                 0.09       0.09 f
+  result[5] (out)                          0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: result_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPAdder            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  result_reg[6]/CK (DFF_X1)                0.00       0.00 r
+  result_reg[6]/Q (DFF_X1)                 0.09       0.09 f
+  result[6] (out)                          0.06       0.15 f
+  data arrival time                                   0.15
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -0.15
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+1

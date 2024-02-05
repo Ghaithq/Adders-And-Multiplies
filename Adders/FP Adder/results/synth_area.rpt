@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : FPAdder
+Version: U-2022.12-SP7
+Date   : Wed Dec 13 18:39:39 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed90nm_typ_ht (File: /home/user57/Desktop/CSA(ripple)/ref/models/saed90nm_typ_ht.db)
+
+Number of ports:                          876
+Number of nets:                          1742
+Number of cells:                          985
+Number of combinational cells:            964
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         99
+Number of references:                       8
+
+Combinational area:              8752.307242
+Buf/Inv area:                      547.430414
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             716.879842
+
+Total cell area:                 8752.307242
+Total area:                      9469.187084
+1

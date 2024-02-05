@@ -1,0 +1,1006 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : TopModule
+Version: G-2012.06-SP2
+Date   : Sat Dec 24 21:24:09 2016
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U109/ZN (INV_X1)                                     0.05       3.89 r
+  M0/U11/ZN (AND2_X1)                                     0.05       3.94 r
+  M0/U25/ZN (NAND2_X1)                                    0.03       3.97 f
+  M0/U27/ZN (NAND3_X1)                                    0.03       4.00 r
+  M0/add_0_root_sub_1_root_sub_16/U1_2/CO (FA_X1)         0.07       4.06 r
+  M0/U17/ZN (NAND2_X1)                                    0.03       4.10 f
+  M0/U7/ZN (INV_X2)                                       0.03       4.13 r
+  M0/U19/ZN (NAND2_X1)                                    0.03       4.16 f
+  M0/U5/ZN (NAND3_X1)                                     0.03       4.19 r
+  M0/U21/ZN (NAND2_X1)                                    0.03       4.23 f
+  M0/U3/ZN (INV_X2)                                       0.04       4.26 r
+  M0/U15/ZN (NAND2_X1)                                    0.02       4.29 f
+  M0/U2/ZN (NAND3_X1)                                     0.03       4.31 r
+  M0/U86/ZN (XNOR2_X1)                                    0.05       4.37 r
+  M0/U101/ZN (AND2_X1)                                    0.04       4.41 r
+  M0/result[30] (FPMultiplier)                            0.00       4.41 r
+  R2/reg_in[30] (register_1)                              0.00       4.41 r
+  R2/reg_out_reg[30]/SE (SDFF_X1)                         0.01       4.42 r
+  data arrival time                                                  4.42
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[30]/CK (SDFF_X1)                         0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U109/ZN (INV_X1)                                     0.05       3.89 r
+  M0/U11/ZN (AND2_X1)                                     0.05       3.94 r
+  M0/U25/ZN (NAND2_X1)                                    0.03       3.97 f
+  M0/U27/ZN (NAND3_X1)                                    0.03       4.00 r
+  M0/add_0_root_sub_1_root_sub_16/U1_2/CO (FA_X1)         0.07       4.06 r
+  M0/U17/ZN (NAND2_X1)                                    0.03       4.10 f
+  M0/U7/ZN (INV_X2)                                       0.03       4.13 r
+  M0/U19/ZN (NAND2_X1)                                    0.03       4.16 f
+  M0/U5/ZN (NAND3_X1)                                     0.03       4.19 r
+  M0/U21/ZN (NAND2_X1)                                    0.03       4.23 f
+  M0/U4/ZN (INV_X2)                                       0.04       4.27 r
+  M0/U14/Z (XOR2_X1)                                      0.05       4.32 r
+  M0/U77/ZN (AND2_X1)                                     0.04       4.36 r
+  M0/result[29] (FPMultiplier)                            0.00       4.36 r
+  R2/reg_in[29] (register_1)                              0.00       4.36 r
+  R2/reg_out_reg[29]/SE (SDFF_X1)                         0.01       4.37 r
+  data arrival time                                                  4.37
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[29]/CK (SDFF_X1)                         0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U109/ZN (INV_X1)                                     0.05       3.89 r
+  M0/U11/ZN (AND2_X1)                                     0.05       3.94 r
+  M0/U25/ZN (NAND2_X1)                                    0.03       3.97 f
+  M0/U27/ZN (NAND3_X1)                                    0.03       4.00 r
+  M0/add_0_root_sub_1_root_sub_16/U1_2/CO (FA_X1)         0.07       4.06 r
+  M0/U17/ZN (NAND2_X1)                                    0.03       4.10 f
+  M0/U7/ZN (INV_X2)                                       0.03       4.13 r
+  M0/U19/ZN (NAND2_X1)                                    0.03       4.16 f
+  M0/U6/ZN (INV_X2)                                       0.04       4.20 r
+  M0/U20/Z (XOR2_X1)                                      0.05       4.25 r
+  M0/U78/ZN (AND2_X1)                                     0.04       4.29 r
+  M0/result[28] (FPMultiplier)                            0.00       4.29 r
+  R2/reg_in[28] (register_1)                              0.00       4.29 r
+  R2/reg_out_reg[28]/SE (SDFF_X1)                         0.01       4.30 r
+  data arrival time                                                  4.30
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[28]/CK (SDFF_X1)                         0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U109/ZN (INV_X1)                                     0.05       3.89 r
+  M0/U11/ZN (AND2_X1)                                     0.05       3.94 r
+  M0/U25/ZN (NAND2_X1)                                    0.03       3.97 f
+  M0/U27/ZN (NAND3_X1)                                    0.03       4.00 r
+  M0/add_0_root_sub_1_root_sub_16/U1_2/CO (FA_X1)         0.07       4.06 r
+  M0/U17/ZN (NAND2_X1)                                    0.03       4.10 f
+  M0/U7/ZN (INV_X2)                                       0.03       4.13 r
+  M0/U13/Z (CLKBUF_X1)                                    0.04       4.17 r
+  M0/U18/Z (XOR2_X1)                                      0.05       4.22 r
+  M0/U76/ZN (AND2_X1)                                     0.04       4.26 r
+  M0/result[27] (FPMultiplier)                            0.00       4.26 r
+  R2/reg_in[27] (register_1)                              0.00       4.26 r
+  R2/reg_out_reg[27]/SE (SDFF_X1)                         0.01       4.27 r
+  data arrival time                                                  4.27
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[27]/CK (SDFF_X1)                         0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.16
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U109/ZN (INV_X1)                                     0.05       3.89 r
+  M0/U11/ZN (AND2_X1)                                     0.05       3.94 r
+  M0/U25/ZN (NAND2_X1)                                    0.03       3.97 f
+  M0/U27/ZN (NAND3_X1)                                    0.03       4.00 r
+  M0/add_0_root_sub_1_root_sub_16/U1_2/CO (FA_X1)         0.07       4.06 r
+  M0/U16/Z (XOR2_X1)                                      0.06       4.12 r
+  M0/U75/ZN (AND2_X1)                                     0.04       4.16 r
+  M0/result[26] (FPMultiplier)                            0.00       4.16 r
+  R2/reg_in[26] (register_1)                              0.00       4.16 r
+  R2/reg_out_reg[26]/SE (SDFF_X1)                         0.01       4.18 r
+  data arrival time                                                  4.18
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[26]/CK (SDFF_X1)                         0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U43/ZN (NAND2_X1)                       0.03       3.76 f
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.05       3.81 r
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.81 r
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.81 r
+  M0/U109/ZN (INV_X1)                                     0.04       3.85 f
+  M0/U11/ZN (AND2_X1)                                     0.04       3.90 f
+  M0/U25/ZN (NAND2_X1)                                    0.03       3.93 r
+  M0/U27/ZN (NAND3_X1)                                    0.04       3.96 f
+  M0/add_0_root_sub_1_root_sub_16/U1_2/S (FA_X1)          0.11       4.08 r
+  M0/U80/ZN (AND2_X1)                                     0.04       4.11 r
+  M0/result[25] (FPMultiplier)                            0.00       4.11 r
+  R2/reg_in[25] (register_1)                              0.00       4.11 r
+  R2/reg_out_reg[25]/SE (SDFF_X1)                         0.01       4.13 r
+  data arrival time                                                  4.13
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[25]/CK (SDFF_X1)                         0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.31
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U109/ZN (INV_X1)                                     0.05       3.89 r
+  M0/U11/ZN (AND2_X1)                                     0.05       3.94 r
+  M0/U23/Z (XOR2_X1)                                      0.06       4.00 r
+  M0/U69/ZN (AND2_X1)                                     0.04       4.04 r
+  M0/result[24] (FPMultiplier)                            0.00       4.04 r
+  R2/reg_in[24] (register_1)                              0.00       4.04 r
+  R2/reg_out_reg[24]/SE (SDFF_X1)                         0.01       4.05 r
+  data arrival time                                                  4.05
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[24]/CK (SDFF_X1)                         0.00       4.50 r
+  library setup time                                     -0.06       4.44
+  data required time                                                 4.44
+  --------------------------------------------------------------------------
+  data required time                                                 4.44
+  data arrival time                                                 -4.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.38
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U105/ZN (OR2_X1)                                     0.11       3.94 f
+  M0/U73/ZN (OAI22_X1)                                    0.06       4.01 r
+  M0/result[0] (FPMultiplier)                             0.00       4.01 r
+  R2/reg_in[0] (register_1)                               0.00       4.01 r
+  R2/reg_out_reg[0]/SE (SDFF_X1)                          0.01       4.02 r
+  data arrival time                                                  4.02
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[0]/CK (SDFF_X1)                          0.00       4.50 r
+  library setup time                                     -0.07       4.43
+  data required time                                                 4.43
+  --------------------------------------------------------------------------
+  data required time                                                 4.43
+  data arrival time                                                 -4.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U105/ZN (OR2_X1)                                     0.11       3.94 f
+  M0/U28/ZN (OAI22_X1)                                    0.06       4.01 r
+  M0/result[3] (FPMultiplier)                             0.00       4.01 r
+  R2/reg_in[3] (register_1)                               0.00       4.01 r
+  R2/reg_out_reg[3]/SE (SDFF_X1)                          0.01       4.02 r
+  data arrival time                                                  4.02
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[3]/CK (SDFF_X1)                          0.00       4.50 r
+  library setup time                                     -0.07       4.43
+  data required time                                                 4.43
+  --------------------------------------------------------------------------
+  data required time                                                 4.43
+  data arrival time                                                 -4.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: R1/reg_out_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R2/reg_out_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TopModule          5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R1/reg_out_reg[22]/CK (SDFF_X1)                         0.00       0.00 r
+  R1/reg_out_reg[22]/Q (SDFF_X1)                          0.13       0.13 r
+  R1/reg_out[22] (register_2)                             0.00       0.13 r
+  M0/b[22] (FPMultiplier)                                 0.00       0.13 r
+  M0/mult_13/B[22] (FPMultiplier_DW02_mult_0)             0.00       0.13 r
+  M0/mult_13/U46/ZN (INV_X1)                              0.03       0.16 f
+  M0/mult_13/U408/ZN (NOR2_X1)                            0.04       0.20 r
+  M0/mult_13/S0_22/S (FA_X1)                              0.10       0.30 f
+  M0/mult_13/S2_2_21/CO (FA_X1)                           0.08       0.38 f
+  M0/mult_13/S2_3_21/S (FA_X1)                            0.13       0.51 r
+  M0/mult_13/S2_4_20/S (FA_X1)                            0.10       0.62 f
+  M0/mult_13/S2_5_19/S (FA_X1)                            0.12       0.73 r
+  M0/mult_13/S2_6_18/S (FA_X1)                            0.10       0.84 f
+  M0/mult_13/S2_7_17/S (FA_X1)                            0.12       0.95 r
+  M0/mult_13/S2_8_16/S (FA_X1)                            0.10       1.06 f
+  M0/mult_13/S2_9_15/S (FA_X1)                            0.12       1.18 r
+  M0/mult_13/S2_10_14/S (FA_X1)                           0.10       1.28 f
+  M0/mult_13/S2_11_13/S (FA_X1)                           0.12       1.40 r
+  M0/mult_13/S2_12_12/S (FA_X1)                           0.10       1.50 f
+  M0/mult_13/S2_13_11/CO (FA_X1)                          0.08       1.58 f
+  M0/mult_13/S2_14_11/S (FA_X1)                           0.13       1.71 r
+  M0/mult_13/S2_15_10/S (FA_X1)                           0.10       1.82 f
+  M0/mult_13/S2_16_9/CO (FA_X1)                           0.08       1.90 f
+  M0/mult_13/S2_17_9/S (FA_X1)                            0.13       2.03 r
+  M0/mult_13/S2_18_8/S (FA_X1)                            0.10       2.13 f
+  M0/mult_13/S2_19_7/S (FA_X1)                            0.12       2.25 r
+  M0/mult_13/S2_20_6/S (FA_X1)                            0.10       2.35 f
+  M0/mult_13/S2_21_5/S (FA_X1)                            0.12       2.47 r
+  M0/mult_13/S2_22_4/S (FA_X1)                            0.10       2.57 f
+  M0/mult_13/S4_3/S (FA_X1)                               0.12       2.69 r
+  M0/mult_13/S14_26/S (FA_X1)                             0.10       2.80 f
+  M0/mult_13/FS_1/A[24] (FPMultiplier_DW01_add_1)         0.00       2.80 f
+  M0/mult_13/FS_1/U146/ZN (NOR2_X1)                       0.05       2.84 r
+  M0/mult_13/FS_1/U42/ZN (INV_X1)                         0.03       2.87 f
+  M0/mult_13/FS_1/U38/ZN (AOI21_X1)                       0.03       2.91 r
+  M0/mult_13/FS_1/U140/ZN (OAI21_X1)                      0.03       2.94 f
+  M0/mult_13/FS_1/U18/ZN (AOI21_X1)                       0.05       2.99 r
+  M0/mult_13/FS_1/U131/ZN (OAI21_X1)                      0.04       3.03 f
+  M0/mult_13/FS_1/U123/ZN (AOI21_X1)                      0.04       3.06 r
+  M0/mult_13/FS_1/U121/ZN (OAI21_X1)                      0.03       3.10 f
+  M0/mult_13/FS_1/U113/ZN (AOI21_X1)                      0.04       3.14 r
+  M0/mult_13/FS_1/U111/ZN (OAI21_X1)                      0.04       3.18 f
+  M0/mult_13/FS_1/U103/ZN (AOI21_X1)                      0.05       3.23 r
+  M0/mult_13/FS_1/U101/ZN (OAI21_X1)                      0.04       3.27 f
+  M0/mult_13/FS_1/U93/ZN (AOI21_X1)                       0.05       3.32 r
+  M0/mult_13/FS_1/U91/ZN (OAI21_X1)                       0.04       3.36 f
+  M0/mult_13/FS_1/U83/ZN (AOI21_X1)                       0.04       3.41 r
+  M0/mult_13/FS_1/U81/ZN (OAI21_X1)                       0.04       3.45 f
+  M0/mult_13/FS_1/U73/ZN (AOI21_X1)                       0.05       3.49 r
+  M0/mult_13/FS_1/U71/ZN (OAI21_X1)                       0.03       3.53 f
+  M0/mult_13/FS_1/U63/ZN (AOI21_X1)                       0.04       3.57 r
+  M0/mult_13/FS_1/U61/ZN (OAI21_X1)                       0.04       3.61 f
+  M0/mult_13/FS_1/U53/ZN (AOI21_X1)                       0.05       3.65 r
+  M0/mult_13/FS_1/U51/ZN (OAI21_X1)                       0.03       3.69 f
+  M0/mult_13/FS_1/U46/ZN (AOI21_X1)                       0.04       3.73 r
+  M0/mult_13/FS_1/U45/ZN (INV_X1)                         0.03       3.76 f
+  M0/mult_13/FS_1/U44/ZN (NAND2_X1)                       0.03       3.78 r
+  M0/mult_13/FS_1/U3/ZN (NAND2_X1)                        0.06       3.84 f
+  M0/mult_13/FS_1/SUM[45] (FPMultiplier_DW01_add_1)       0.00       3.84 f
+  M0/mult_13/PRODUCT[47] (FPMultiplier_DW02_mult_0)       0.00       3.84 f
+  M0/U105/ZN (OR2_X1)                                     0.11       3.94 f
+  M0/U29/ZN (OAI22_X1)                                    0.06       4.01 r
+  M0/result[5] (FPMultiplier)                             0.00       4.01 r
+  R2/reg_in[5] (register_1)                               0.00       4.01 r
+  R2/reg_out_reg[5]/SE (SDFF_X1)                          0.01       4.02 r
+  data arrival time                                                  4.02
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.00       4.50
+  R2/reg_out_reg[5]/CK (SDFF_X1)                          0.00       4.50 r
+  library setup time                                     -0.07       4.43
+  data required time                                                 4.43
+  --------------------------------------------------------------------------
+  data required time                                                 4.43
+  data arrival time                                                 -4.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+1
