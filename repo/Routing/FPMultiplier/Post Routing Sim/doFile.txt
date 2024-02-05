@@ -1,9 +1,0 @@
-vsim -gui work.FPMultiplierTB
-add wave -position insertpoint  \
-sim:/FPMultiplierTB/a \
-sim:/FPMultiplierTB/b \
-sim:/FPMultiplierTB/clk \
-sim:/FPMultiplierTB/result \
-sim:/FPMultiplierTB/successCount
-run
-run
